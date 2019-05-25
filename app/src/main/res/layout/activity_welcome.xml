@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/image"
         android:layout_width="149dp"
         android:layout_height="82dp"
         android:src="@drawable/swooshlogo"
@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/image" />
 
     <TextView
         android:id="@+id/textView2"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/get_started_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
