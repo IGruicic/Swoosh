@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SkillActivity"></activity>
-        <activity android:name=".BaseActivity" />
-        <activity android:name=".LeagueActivity" />
-        <activity android:name=".WelcomeActivity">
+        <activity android:name=".Controler.FinishActivity"></activity>
+        <activity android:name=".Controler.SkillActivity" />
+        <activity android:name=".Controler.BaseActivity" />
+        <activity android:name=".Controler.LeagueActivity" />
+        <activity android:name=".Controler.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

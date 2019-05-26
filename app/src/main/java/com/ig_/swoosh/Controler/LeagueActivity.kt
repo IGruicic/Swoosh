@@ -1,11 +1,11 @@
-package com.ig_.swoosh
+package com.ig_.swoosh.Controler
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.ig_.swoosh.Utilities.EXTRA_LEAGUE
+import com.ig_.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
@@ -21,6 +21,7 @@ class LeagueActivity : BaseActivity() {
         coedLeagueBtn.isChecked= false
         selectedLeague = "mens"
     }
+
     fun onWomensClc(view: View){
         mensLeagueBtn.isChecked=false
         coedLeagueBtn.isChecked=false
@@ -35,7 +36,7 @@ class LeagueActivity : BaseActivity() {
 
     fun leagueNextClc(view: View){
         if(selectedLeague != ""){
-        val skillActivity = Intent(this,SkillActivity::class.java)
+        val skillActivity = Intent(this, SkillActivity::class.java)
         skillActivity.putExtra(EXTRA_LEAGUE,selectedLeague)
         startActivity(skillActivity)
         } else{
